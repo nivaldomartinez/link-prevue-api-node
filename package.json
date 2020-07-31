@@ -1,0 +1,25 @@
+{
+  "name": "link-prevue-api",
+  "version": "2.0.0",
+  "description": "webapi to get link previews",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "link-preview",
+    "vue",
+    "hapijs",
+    "linkprevue"
+  ],
+  "author": "Nivaldo Martinez",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "sa-link-preview": "^1.0.2"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
