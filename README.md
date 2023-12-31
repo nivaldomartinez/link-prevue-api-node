@@ -8,16 +8,16 @@
 
 ## Install deps
 
-In the root project folder run the following command
+In root project folder run the following command
 
 ```sh
-$ npm install
+$ bun install
 ```
 
 and run
 
 ```sh
-$ npm start
+$ bun run dev
 ```
 
 ## Get a link preview

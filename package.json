@@ -1,25 +1,14 @@
 {
-  "name": "link-prevue-api",
-  "version": "2.0.0",
-  "description": "webapi to get link previews",
-  "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
   },
-  "keywords": [
-    "link-preview",
-    "vue",
-    "hapijs",
-    "linkprevue"
-  ],
-  "author": "Nivaldo Martinez",
-  "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1",
-    "sa-link-preview": "^1.0.2"
+    "cheerio": "^1.0.0-rc.12",
+    "hono": "^3.11.11"
   },
-  "engines": {
-    "node": "10.x"
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "wrangler": "^3.22.0"
   }
 }
