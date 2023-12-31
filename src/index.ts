@@ -1,7 +1,12 @@
 import { Hono } from 'hono'
+import { cors } from 'hono/cors'
 import linkPreview from './link-preview'
 
 const app = new Hono()
+
+app.use(cors({
+    origin: '*',
+}))
 
 app.get('/', (c) => c.text('Link Prevue API v3.0.0'))
 
