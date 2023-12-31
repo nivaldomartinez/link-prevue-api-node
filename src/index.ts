@@ -4,9 +4,7 @@ import linkPreview from './link-preview'
 
 const app = new Hono()
 
-app.use(cors({
-    origin: '*',
-}))
+app.use(cors())
 
 app.get('/', (c) => c.text('Link Prevue API v3.0.0'))
 
