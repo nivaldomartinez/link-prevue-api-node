@@ -1,4 +1,4 @@
-# Link-Preview Backend with Node.js
+# Link-Preview API cloudflare/workers
 
 [link-prevue](https://github.com/nivaldomartinez/link-prevue)
 
@@ -23,19 +23,22 @@ $ bun run dev
 ## Get a link preview
 
 ```sh
-$ curl -d '{"url":"https://tasche.herokuapp.com/"}' -H "Content-Type: application/json" http://localhost:3000/preview
+$ curl --location 'https://link-preview-api.nivaldo.workers.dev/preview?url=https://bun.sh/'
 ```
 
 ## Response
 
 ```js
 {
-    "title": "Tasche",
-    "description": "Tasche te permite guardar links de lo que desees para que siempre lo tengas contigo",
-    "image": "http://tasche.herokuapp.com/static/images/logo-blue.png",
-    "url": "https://tasche.herokuapp.com/",
-    "siteName": null
+    "title": "Bun — A fast all-in-one JavaScript runtime",
+    "description": "Bundle, install, and run JavaScript & TypeScript — all in Bun. Bun is a new JavaScript runtime with a native bundler, transpiler, task runner, and npm client built-in.",
+    "image": "https://bun.sh/share_v3.png",
+    "url": "https://bun.sh",
+    "siteName": "Bun"
 }
 ```
 
 :heart:
+
+Alternative
+[siddhigate/link-preview](https://github.com/siddhigate/link-preview)
