@@ -2,7 +2,7 @@
 
 [link-prevue](https://github.com/nivaldomartinez/link-prevue)
 
-[link-prevue Demo Repo](https://github.com/nivaldomartinez/link-prevue-demo)
+[link-prevue Demo Repo - (archived)](https://github.com/nivaldomartinez/link-prevue-demo)
 
 ## Install deps
 
