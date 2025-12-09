@@ -1,14 +1,15 @@
 {
   "scripts": {
     "dev": "wrangler dev src/index.ts",
-    "deploy": "wrangler deploy --minify src/index.ts"
+    "deploy": "wrangler deploy --minify src/index.ts",
+    "clean": "rm -rf node_modules && rm -rf package-lock.json"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.12",
-    "hono": "^3.11.11"
+    "cheerio": "^1.1.2",
+    "hono": "^4.10.8"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^4.20231218.0",
-    "wrangler": "^3.22.0"
+    "wrangler": "^4.53.0"
   }
 }
