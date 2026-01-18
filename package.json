@@ -2,14 +2,18 @@
   "scripts": {
     "dev": "wrangler dev src/index.ts",
     "deploy": "wrangler deploy --minify src/index.ts",
-    "clean": "rm -rf node_modules && rm -rf bun.lockb"
+    "clean": "rm -rf node_modules && rm -rf bun.lockb",
+    "test": "jest"
   },
   "dependencies": {
     "cheerio": "^1.1.2",
-    "hono": "^4.10.8"
+    "hono": "^4.11.4"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20231218.0",
-    "wrangler": "^4.53.0"
+    "@cloudflare/workers-types": "^4.20260118.0",
+    "@types/jest": "^30.0.0",
+    "jest": "^30.2.0",
+    "ts-jest": "^29.4.6",
+    "wrangler": "^4.59.2"
   }
 }
