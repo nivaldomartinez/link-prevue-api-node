@@ -19,15 +19,15 @@ function collectMeta($: cheerio.CheerioAPI, url: string) {
 
 
 const linkPreview = async (url: string) => {
-  if (!isValidHttpUrl(url)) return Promise.reject({ message: 'You must add a valid url' });
+  if (!isValidHttpUrl(url)) return Promise.reject({ message: 'You must add a valid url' })
 
   const response = await fetch(url)
-  if (!response) return getEmptyData(url);
+  if (!response) return getEmptyData(url)
   if (response.status === 200) {
     const body = await response.text()
     return collectMeta(cheerio.load(body), url)
   }
-  return getEmptyData(url);
+  return getEmptyData(url)
 }
 
 export default linkPreview

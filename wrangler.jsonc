@@ -21,7 +21,21 @@
 			"persist": true,
 			"head_sampling_rate": 1
 		}
-	}
+	},
+	"durable_objects": {
+		"bindings": [
+			{
+				"name": "RATE_LIMITER",
+				"class_name": "RateLimiter"
+			}
+		]
+	},
+	"migrations": [
+		{
+			"tag": "v1.0.0",
+			"new_classes": ["RateLimiter"]
+		}
+	]
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
